@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+
+# Import targets from the export set
+include("${CMAKE_CURRENT_LIST_DIR}/yaetsTargets.cmake")
+
+# Set include directories for external projects
+set(yaets_INCLUDE_DIRS "@PACKAGE_INCLUDE_DESTINATION@")
